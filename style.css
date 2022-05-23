@@ -39,6 +39,14 @@ a {
     justify-content: left;
 }
 
+li {
+    font-size: max(13px, 1vw);
+}
+
+.icon {
+    width: max(calc(1vw * 2.3), 30px);
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
