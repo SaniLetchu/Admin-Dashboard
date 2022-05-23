@@ -145,6 +145,12 @@ input {
     width: 3%;
 }
 
+.projectinfo {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+
 .profilepicturetop {
     border-radius: 500px;
     width: min(10%, 45px);
