@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     display: grid;
-    grid-template: minmax(150px, 1fr) minmax(600px, 4fr) / minmax(200px, 1fr) minmax(1000px, 4fr);
+    grid-template: minmax(200px, 1fr) minmax(600px, 4fr) / minmax(230px, 1fr) minmax(1000px, 4fr);
 }
 
 .brandinglogo {
@@ -16,6 +16,11 @@ body {
 
 li {
     list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .branding {
@@ -46,7 +51,7 @@ li {
 }
 
 .icon {
-    width: max(calc(1vw * 2.3), 30px);
+    width: max(calc(1vw * 1.7), 30px);
 }
 
 .sidebar {
@@ -62,18 +67,34 @@ input {
 }
 
 .main-content {
+    padding: 20px;
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
 }
 
 .projects {
     grid-area: 1 / 1 / -1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectboxes {
+    display: grid;
+    height: 100%;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.projectbox {
+    border-radius: 15px;
 }
 
 .header {
+    padding: 20px;
     grid-area: 1 / 2 / 2 / -1;
     display: grid;
-    grid-template: 1fr 1fr / 3fr 2fr;
+    grid-template: 1fr 2fr / 3fr 2fr;
 }
 
 .buttonsbox {
@@ -86,6 +107,27 @@ input {
     width: 3%;
 }
 
+.profilepicturetop {
+    border-radius: 500px;
+    width: min(10%, 45px);
+}
+
+.profilepicture {
+    border-radius: 500px;
+    width: min(13%, 100px);
+}
+
+.greetingsbox > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.greetingsbox > div > p {
+    margin: 0;
+}
+
 .searchbox {
     display: flex;
     gap: 10px;
@@ -93,6 +135,7 @@ input {
     align-items: center;
 }
 .profilebox {
+    gap: 15px;
     display: flex;
     justify-content: right;
     align-items: center;
