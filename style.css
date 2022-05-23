@@ -1,0 +1,63 @@
+* {
+    border: solid;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template: minmax(150px, 1fr) minmax(600px, 4fr) / minmax(200px, 1fr) minmax(1000px, 4fr);
+}
+
+button {
+    border-radius: 35px;
+    height: min(70%, 65px);
+    width: min(27%, 180px);;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+input {
+    border-radius: 15px;
+    width: 90%;
+}
+
+.main-content {
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.projects {
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 2fr;
+}
+
+.buttonsbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilebox {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.greetingsbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
