@@ -86,6 +86,7 @@ li {
 }
 
 input {
+    background-color: #dbeafe;
     border-radius: 15px;
     width: 90%;
     font-size: large;
@@ -137,6 +138,8 @@ input {
 }
 
 .header {
+    /*Credit: https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #eff6ff;
     padding: 20px 40px;
     grid-area: 1 / 2 / 2 / -1;
@@ -178,6 +181,8 @@ input {
 }
 
 .card {
+    /*Credit: https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #eff6ff;
 }
 
