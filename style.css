@@ -10,13 +10,39 @@ body {
     grid-template: minmax(150px, 1fr) minmax(600px, 4fr) / minmax(200px, 1fr) minmax(1000px, 4fr);
 }
 
+.brandinglogo {
+    width: 15%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.branding {
+    display: flex;
+    gap: 10px;
+}
+
+.title {
+    font-size: max(2vw, 25px);
+}
+
 button {
     border-radius: 35px;
     height: min(70%, 65px);
     width: min(27%, 180px);;
 }
 
+a {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+}
+
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     grid-area: 1 / 1 / -1 / 2;
 }
 
