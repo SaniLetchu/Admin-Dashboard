@@ -8,10 +8,12 @@ body {
     height: 100vh;
     margin: 0;
     display: grid;
-    grid-template: minmax(200px, 1fr) minmax(600px, 4fr) / minmax(230px, 1fr) minmax(1000px, 4fr);
+    grid-template: minmax(200px, 1fr) minmax(600px, 4fr) / minmax(280px, 1fr) minmax(600px, 4fr);
 }
 
 .brandinglogo {
+    /*Credit: https://codepen.io/sosuke/pen/Pjoqqp*/
+    filter: invert(100%) sepia(8%) saturate(7488%) hue-rotate(235deg) brightness(120%) contrast(92%);
     width: 15%;
 }
 
@@ -31,8 +33,14 @@ a {
     padding-right: 15px;
 }
 
+.projectname {
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .title {
-    font-size: max(2vw, 26px);
+    color: whitesmoke;
+    font-size: max(2vw, 30px);
 }
 
 button {
@@ -54,15 +62,22 @@ a {
 }
 
 li {
-    font-size: max(13px, 1vw);
+    font-size: max(15px, 1vw);
 }
 
 .icon {
-    width: max(calc(1vw * 1.7), 30px);
+    width: max(13%, 50px);
+    /*Credit: https://codepen.io/sosuke/pen/Pjoqqp*/
+    filter: invert(100%) sepia(8%) saturate(7488%) hue-rotate(235deg) brightness(120%) contrast(92%);
 }
 
+.sidebar > nav > ul > a {
+    color:whitesmoke;
+}
+
+
 .sidebar {
-    background-color: #60a5fa;
+    background-color: #38bdf8;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -84,15 +99,17 @@ input {
     grid-area: 1 / 1 / -1 / 2;
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
 }
 
 .projectboxes {
+    overflow: auto;
     padding: 20px;
     display: grid;
     height: 100%;
     gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-row: auto;
+    grid-auto-rows: minmax(300px,1fr);
 }
 
 .projectbox {
