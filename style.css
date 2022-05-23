@@ -51,6 +51,7 @@ button {
 
 ul {
     display: flex;
+    gap: 20px;
     flex-direction: column;
     align-items: left;
 }
@@ -66,7 +67,7 @@ li {
 }
 
 .icon {
-    width: max(13%, 50px);
+    width: max(9%, 30px);
     /*Credit: https://codepen.io/sosuke/pen/Pjoqqp*/
     filter: invert(100%) sepia(8%) saturate(7488%) hue-rotate(235deg) brightness(120%) contrast(92%);
 }
@@ -80,13 +81,14 @@ li {
     background-color: #38bdf8;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 40px;
     grid-area: 1 / 1 / -1 / 2;
 }
 
 input {
     border-radius: 15px;
     width: 90%;
+    font-size: large;
 }
 
 .main-content {
@@ -101,11 +103,18 @@ input {
     flex-direction: column;
     padding-right: 15px;
 }
+.welcome {
+    font-weight: bold;
+}
 
+.name {
+    font-size: 23px;
+    font-weight: bold;
+}
 .projectboxes {
     overflow: auto;
-    padding: 20px;
     display: grid;
+    padding: 10px;
     height: 100%;
     gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -129,7 +138,7 @@ input {
 
 .header {
     background-color: #eff6ff;
-    padding: 20px;
+    padding: 20px 40px;
     grid-area: 1 / 2 / 2 / -1;
     display: grid;
     grid-template: 1fr 2fr / 3fr 2fr;
@@ -142,7 +151,7 @@ input {
 }
 
 .searchicon {
-    width: 3%;
+    width: max(3%, 20px);
 }
 
 .projectinfo {
@@ -158,7 +167,7 @@ input {
 
 .profilepicture {
     border-radius: 500px;
-    width: min(13%, 100px);
+    width: clamp(50px, 100px, 200px)
 }
 
 .greetingsbox > div {
@@ -172,6 +181,10 @@ input {
     background-color: #eff6ff;
 }
 
+.accountname {
+    font-weight: bold;
+}
+
 .greetingsbox > div > p {
     margin: 0;
 }
@@ -183,7 +196,7 @@ input {
     align-items: center;
 }
 .profilebox {
-    gap: 15px;
+    gap: 25px;
     display: flex;
     justify-content: right;
     align-items: center;
